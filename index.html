@@ -1,32 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Modern Front Door Studio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 80px 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #0f172a;
+      padding: 14px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card {
+      background: white;
+      color: #111827;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .mockup {
+      background: #111827;
+      color: white;
+      padding: 25px;
+      border-radius: 16px;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-light {
+      background: white;
+      color: #111827;
+    }
+
+    .section-light p {
+      color: #4b5563;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .contact-box {
+      background: #f3f4f6;
+      border-radius: 20px;
+      padding: 40px;
+      color: #111827;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      margin-top: 14px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+    }
+
+    button {
+      margin-top: 18px;
+      background: #111827;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; padding: 40px; max-width: 800px; margin: auto;">
-  <h1>Modern Front Door Studio</h1>
 
-  <p>
-    Modern homepage redesigns for local businesses.
-  </p>
+<body>
 
-  <p>
-    I create clean, modern homepage concepts for businesses with outdated websites or weak online presence.
-  </p>
+  <header>
+    <div class="container hero">
 
-  <h2>What I Do</h2>
+      <div>
+        <h1>
+          Modern websites for local businesses.
+        </h1>
 
-  <ul>
-    <li>Homepage redesign mockups</li>
-    <li>Simple modern websites</li>
-    <li>Mobile-friendly layouts</li>
-    <li>Fast turnaround</li>
-  </ul>
+        <p>
+          I redesign outdated business websites into clean, modern homepage experiences that build trust and help customers take action.
+        </p>
 
-  <h2>Contact</h2>
+        <a class="btn" href="#contact">
+          Request a Free Mockup
+        </a>
+      </div>
 
-  <p>
-    Email: hello@modernfrontdoorstudio.com
-  </p>
+      <div class="card">
+        <h3>Before → After</h3>
+
+        <div class="mockup">
+          <h2>Clean. Modern. Trustworthy.</h2>
+
+          <p style="margin-top: 10px;">
+            Mobile-friendly homepage redesigns built for real local businesses.
+          </p>
+
+          <button>
+            Call Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="section-light">
+    <div class="container">
+
+      <h2 style="font-size: 40px;">
+        What I Help With
+      </h2>
+
+      <p style="margin-top: 15px;">
+        Many small businesses have outdated websites, weak mobile experiences, or no clear call-to-action. I create modern homepage redesigns that improve first impressions and make businesses easier to trust online.
+      </p>
+
+      <div class="grid">
+
+        <div class="feature">
+          <h3>Homepage Redesigns</h3>
+
+          <p style="margin-top: 10px;">
+            Clean modern layouts focused on clarity and trust.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Mobile Friendly</h3>
+
+          <p style="margin-top: 10px;">
+            Optimized for phones and modern browsing habits.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Fast Turnaround</h3>
+
+          <p style="margin-top: 10px;">
+            Simple mockups and redesign concepts delivered quickly.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-box">
+
+        <h2 style="font-size: 40px;">
+          Request a Free Homepage Mockup
+        </h2>
+
+        <p style="margin-top: 15px;">
+          Send your business name and current website.
+        </p>
+
+        <form>
+          <input type="text" placeholder="Your Name" />
+
+          <input type="text" placeholder="Business Name" />
+
+          <input type="text" placeholder="Current Website" />
+
+          <textarea rows="5" placeholder="Tell me a little about your business"></textarea>
+
+          <button type="submit">
+            Request Mockup
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Modern Front Door Studio
+  </footer>
+
 </body>
 </html>
